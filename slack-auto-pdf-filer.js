@@ -46,9 +46,9 @@ function getSlackLog() {
   var requestUrl = 'https://slack.com/api/channels.history?';
   var payload = {
     // Slack Token
-    'token': 'xoxp-526772610339-526303117057-586220649396-4812ab7a39dd87d2a11b755168846a22',
+    'token': 
     // Channel ID
-    'channel': 'CH990PQPR',
+    'channel': 
     // 25時間分のメッセージ取得
     // 25時間前に戻る　oldest から now まで
     'oldest': parseInt( new Date() / 1000 ) - (60 * 60 * 25)
@@ -69,7 +69,7 @@ function GenerateShareUrl(fileid) {
   var requestUrl = 'https://slack.com/api/files.sharedPublicURL?';
   var payload = {
     // Slack Token
-    'token': 'xoxp-526772610339-526303117057-586220649396-4812ab7a39dd87d2a11b755168846a22',
+    'token': 
     // Channel ID
     'file': fileid
   }
